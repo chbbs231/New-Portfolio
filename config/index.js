@@ -1,3 +1,4 @@
+const mongoose = require ('mongoose')
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/portfoliodb'
 
 module.exports = mongoose.connect(MONGODB_URI, {
