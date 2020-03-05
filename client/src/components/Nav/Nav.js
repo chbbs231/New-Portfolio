@@ -5,6 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Link from '@material-ui/core/Link'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -26,7 +27,13 @@ export default function ButtonAppBar() {
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon />
+
+            <MenuIcon>
+            <Link to="/about">
+            <Typography variant="h4" component="header" color="primary">About</Typography>
+          </Link>
+            </MenuIcon>
+            
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             Arturo Torres Robles 
