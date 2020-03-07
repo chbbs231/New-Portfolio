@@ -10,11 +10,14 @@ import Contact from './pages/Contact'
 import Portfolio from './pages/Portfolio'
 //Import for components
 import Nav from './components/Nav'
+import BottomNav from './components/BottomNav'
 
 function App() {
   return (
     <Router>
     <div>
+      <Nav/>
+      <BottomNav/>
       <Switch>
         <Route exact path ="/">
           <About/>
